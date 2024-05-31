@@ -1,8 +1,10 @@
-//
-// Created by Richard Miles on 5/30/24.
-//
+// include/carbon.h
+#ifndef CARBON_H
+#define CARBON_H
 
-#ifndef CARBONC_CARBON_H
-#define CARBONC_CARBON_H
+void carbon_init();
+void carbon_shutdown();
+const char* carbon_version();
+void helloWorld();
 
-#endif //CARBONC_CARBON_H
+#endif // CARBON_H

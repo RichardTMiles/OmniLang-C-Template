@@ -1,8 +1,7 @@
-//
-// Created by Richard Miles on 5/30/24.
-//
+// bindings/python/carbon_python.h
+#ifndef CARBON_PYTHON_H
+#define CARBON_PYTHON_H
 
-#ifndef CARBONC_CARBON_PYTHON_H
-#define CARBONC_CARBON_PYTHON_H
+#include "carbon.h"
 
-#endif //CARBONC_CARBON_PYTHON_H
+#endif // CARBON_PYTHON_H
