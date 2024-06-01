@@ -1,0 +1,7 @@
+/Users/richardmiles/CLionProjects/OmniLang-C-Template/CMakeFiles/carbon.dir
+/Users/richardmiles/CLionProjects/OmniLang-C-Template/CMakeFiles/carbon_php.dir
+/Users/richardmiles/CLionProjects/OmniLang-C-Template/CMakeFiles/carbon_python.dir
+/Users/richardmiles/CLionProjects/OmniLang-C-Template/CMakeFiles/carbon_ruby.dir
+/Users/richardmiles/CLionProjects/OmniLang-C-Template/CMakeFiles/carbon_node.dir
+/Users/richardmiles/CLionProjects/OmniLang-C-Template/CMakeFiles/edit_cache.dir
+/Users/richardmiles/CLionProjects/OmniLang-C-Template/CMakeFiles/rebuild_cache.dir

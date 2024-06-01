@@ -5,6 +5,6 @@
 void carbon_init();
 void carbon_shutdown();
 const char* carbon_version();
-void helloWorld();
+const char* helloWorld();
 
 #endif // CARBON_H

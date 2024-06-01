@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -dynamiclib -Wl,-headerpad_max_install_names -L/usr/local/opt/bzip2/lib -o libcarbon.dylib -install_name @rpath/libcarbon.dylib CMakeFiles/carbon.dir/src/carbon.c.o

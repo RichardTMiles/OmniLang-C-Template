@@ -1,4 +1,3 @@
-// bindings/php/carbon_php.c
 #include "carbon_php.h"
 
 PHP_FUNCTION(carbon_version) {
@@ -7,26 +6,29 @@ PHP_FUNCTION(carbon_version) {
 }
 
 PHP_FUNCTION(carbon_hello_world) {
-        helloWorld();
+        const char* message = helloWorld();
+        RETURN_STRING(message);
 }
 
 const zend_function_entry carbon_functions[] = {
-        PHP_FE(carbon_version, NULL),
-        PHP_FE(carbon_hello_world, NULL),
+        PHP_FE(carbon_version, arginfo_carbon_version),
+        PHP_FE(carbon_hello_world, arginfo_carbon_hello_world),
         PHP_FE_END
 };
 
 zend_module_entry carbon_module_entry = {
         STANDARD_MODULE_HEADER,
-        "carbon",
-        carbon_functions,
-        NULL, // Module init
-        NULL, // Module shutdown
-        NULL, // Request init
-        NULL, // Request shutdown
-        NULL, // Module info
-        "1.0",
+        "carbon",                   // Extension name
+        carbon_functions,           // Functions
+        NULL,                       // MINIT
+        NULL,                       // MSHUTDOWN
+        NULL,                       // RINIT
+        NULL,                       // RSHUTDOWN
+        NULL,                       // MINFO
+        "1.0.0",                    // Version
         STANDARD_MODULE_PROPERTIES
 };
 
+#ifdef COMPILE_DL_CARBON
 ZEND_GET_MODULE(carbon)
+#endif

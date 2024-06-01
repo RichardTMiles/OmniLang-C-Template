@@ -14,6 +14,6 @@ const char* carbon_version() {
     return "CarbonC 1.0.0";
 }
 
-void helloWorld() {
-    printf("Hello World!\n");
+const char* helloWorld() {
+    return  "Hello World!";
 }
